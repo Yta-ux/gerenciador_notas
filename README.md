@@ -1,5 +1,6 @@
 # Gerenciador de Notas
 ![projeto preview](./.github/image.png)
+
 Esse projeto tem como objetivo criar um gerenciador de notas, onde o usuário, ao inserir uma base de dados, pode realizar consultas e gerar relatórios.
 
 ## Requisitos
