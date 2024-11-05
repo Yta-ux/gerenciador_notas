@@ -32,9 +32,6 @@ def generate_reports(data, option):
         alunos = pd.DataFrame(alunos_dicionario)
         alunos.to_excel('reports/relatorio.xlsx', index=False)
 
-    # elif option == 4:
-    #     continue
-
     else:
         print("\033[31mOpção inválida, digite novamente.\033[0m")
     

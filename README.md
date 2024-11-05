@@ -7,10 +7,12 @@ Para esse projeto é necessário instalar as seguintes bibliotecas:
 - pandas
 - matplotlib
 - openpyxl
+- xlrd
 ```
 pip install pandas
 pip install matplotlib
 pip install openpyxl
+pip install xlrd
 ```
 ## Funcionalidades
 - Realizar buscas na base de dados
@@ -24,8 +26,14 @@ Para utilizar o gerenciador de notas, basta seguir os passos abaixo:
 3. Siga as instruções do programa
 4. Pronto! Você já pode realizar consultas e gerar relatórios
 
-OBS.: Segue link do modelo de planilha a ser utilizado: [Planlinha](https://docs.google.com/spreadsheets/d/1prlB-YISPB7u0ZzkzhEZgH4iDrX_KMCRkGkM6kcFts0/edit?usp=sharing)
+OBS.: Segue link do modelo de planilha a ser utilizado: [Planilha](https://docs.google.com/spreadsheets/d/1prlB-YISPB7u0ZzkzhEZgH4iDrX_KMCRkGkM6kcFts0/edit?usp=sharing)
 
+## Avisos
+- O programa foi desenvolvido para funcionar com planilhas no formato .xlsx
+- Para verificar as plotagens é necessário que seu vscode tenha a extensão python e jupiter instaladas, para acessar o modo interativo
+- Caso não possua um vscode atualizado acesse o [Google Colab](https://colab.google/) e execute o arquivo [main.ipynb](./main.ipynb) 
+- **Lembre de verificar o caminho da sua planilha**
+  
 ## Autores
 - [Ítalo Gustavo](https://github.com/Yta-ux)
 - [Camila Freitas](https://github.com/CamilaFB)

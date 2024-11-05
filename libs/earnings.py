@@ -33,7 +33,10 @@ def graphic_mean_frequency(data):
   plt.show()
 
 def generate_pdf(data):
-  with PdfPages('results/relatorio_graficos.pdf') as pdf:
+  if not os.path.exists('reports'):
+    os.mkdir('reports')
+
+  with PdfPages('reports/relatorio_graficos.pdf') as pdf:
     data['media'] = data[['nota1', 'nota2', 'nota3', 'nota4']].mean(axis=1)
     media_alunos = data.groupby('nome')['media'].mean()
     genero_counts = data['sexo'].value_counts()
@@ -74,7 +77,5 @@ def generate_earnings_class(data, option):
       graphic_mean_frequency(data)
     case 5:
       generate_pdf(data)
-    # case 6:
-    #   break
     case _ :
       print('\033[31mOpção inválida, digite novamente.\033[0m')
