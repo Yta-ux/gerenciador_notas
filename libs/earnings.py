@@ -13,6 +13,8 @@ def graphic_by_sex(data):
 
 # Gera um gráfico de barras mostrando a média de rendimento de cada aluno.
 def graphic_by_students(data):
+  for col in ['nota1', 'nota2', 'nota3', 'nota4']:
+    data[col] = pd.to_numeric(data[col], errors='coerce')
   data['media'] = data[['nota1', 'nota2', 'nota3', 'nota4']].mean(axis=1)  # Calcula a média de cada aluno
   media_alunos = data.groupby('nome')['media'].mean()  # Agrupa por nome e calcula média
 
@@ -26,6 +28,8 @@ def graphic_by_students(data):
 
 # Gera um histograma para mostrar a distribuição das médias das notas.
 def graphic_mean_frequency(data):
+  for col in ['nota1', 'nota2', 'nota3', 'nota4']:
+    data[col] = pd.to_numeric(data[col], errors='coerce')
   data['media'] = data[['nota1', 'nota2', 'nota3', 'nota4']].mean(axis=1)  # Calcula a média de cada aluno
 
   plt.figure(figsize=(10, 6))
@@ -39,6 +43,9 @@ def graphic_mean_frequency(data):
 def generate_pdf(data):
   if not os.path.exists('reports'):
     os.mkdir('reports')  # Cria o diretório 'reports' caso não exista
+
+  for col in ['nota1', 'nota2', 'nota3', 'nota4']:
+      data[col] = pd.to_numeric(data[col], errors='coerce')
 
   with PdfPages('reports/relatorio_graficos.pdf') as pdf:
   # Adiciona um gráfico de pizza com a proporção de gênero

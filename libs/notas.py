@@ -33,9 +33,11 @@ def generate_search_students(data, option):
             print('\033[31mPESQUISA NÃO ENCONTRADA\033[0m')
 # Status --------------------------------------------------------
     elif option == 4:
+        for col in ['nota1', 'nota2', 'nota3', 'nota4']:
+            data[col] = pd.to_numeric(data[col], errors='coerce')
         data['media'] = data[['nota1', 'nota2', 'nota3', 'nota4']].mean(axis=1)
         data['status'] = data['media'].apply(lambda media: 'aprovado' if media >= 6 else 'reprovado')
-        s_aluno = input('Status dos alunos deseja observar: ').lower()
+        s_aluno = input('Status dos alunos deseja observar [Aprovado ou Reprovado]: ').lower()
         por_status = data[data['status'] == s_aluno]
         
         if not por_status.empty:

@@ -75,7 +75,7 @@ def load_data(type_sheet, name_sheet):
         if type_sheet == "xlsx":
             return pd.read_excel(path, sheet_name='notas')
         elif type_sheet == "csv":
-            return pd.read_csv(path)
+            return pd.read_csv(path, decimal=',')
         message_format("Arquivo encontrado.", "sucesso")
     except FileNotFoundError:
         message_format("Planilha não encontrada.", "erro")

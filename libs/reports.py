@@ -2,6 +2,8 @@ import os
 import pandas as pd
 
 def generate_reports(data, option):
+    for col in ['nota1', 'nota2', 'nota3', 'nota4']:
+        data[col] = pd.to_numeric(data[col], errors='coerce')
     alunos = data
     alunos_dicionario = alunos.to_dict()
     alunos_dicionario['media'] = {}
