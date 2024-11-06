@@ -38,7 +38,7 @@ def main_menu(data):
 
 # Definem a função de cada um dos menus, além de adicionar o fluxo de retorno
 def search_menu(data):
-    option = menu("BUSCA DE ALUNOS", ["Matrícula", "Nome", "Sexo", "Status", "Voltar"])
+    option = menu("BUSCA DE ALUNOS", ["Matrícula", "Nome", "Gênero", "Status", "Voltar"])
     if option in range(1, 5):
         notas.generate_search_students(data, option)
     elif option == 5:
@@ -48,7 +48,7 @@ def search_menu(data):
 
 def earnings_menu(data):
     option = menu("RENDIMENTOS GERAIS", [
-        "Visualizar dados", "Distribuição com base no sexo",
+        "Visualizar dados", "Distribuição com base no Gênero",
         "Distribuição das médias por aluno", "Distribuição com base na frequência de médias",
         "Gerar relatório geral das análises", "Voltar"
     ])

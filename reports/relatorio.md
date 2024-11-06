@@ -1,0 +1,35 @@
+## Relatório de Notas
+| Alunos    | Notas | Status 
+| -------- | ------- | ------- |
+|Jonas|7.5|APROVADO
+|Mario|7.725|APROVADO
+|Josivan|6.775|REPROVADO
+|Alberto|7.15|APROVADO
+|Mia|7.1|APROVADO
+|Sibelle|8.0|APROVADO
+|Neuza|7.625|APROVADO
+|Claúdia|7.65|APROVADO
+|Joana|7.2|APROVADO
+|João|6.65|REPROVADO
+|Carlos|7.175|APROVADO
+|Elderson|8.125|APROVADO
+|Duarte|6.0249999999999995|REPROVADO
+|Paulo|7.3|APROVADO
+|Adriano|7.625|APROVADO
+|Cirilo|7.75|APROVADO
+|Ronaldo|7.0|APROVADO
+|Regina|7.5|APROVADO
+|Laylla|9.0|APROVADO
+|Cleber|7.0|APROVADO
+|Gustavo|8.25|APROVADO
+|Carlos|7.75|APROVADO
+|Marta|7.0|APROVADO
+|Emanuelly|10.0|APROVADO
+|João|8.25|APROVADO
+|Pedro|8.0|APROVADO
+|Isabelly|8.25|APROVADO
+|Raissa|8.0|APROVADO
+|Pablo|10.0|APROVADO
+|Ana|8.375|APROVADO
+|Renata|9.625|APROVADO
+|Elias|9.0|APROVADO
