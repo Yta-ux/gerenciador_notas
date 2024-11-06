@@ -24,7 +24,7 @@ def generate_search_students(data, option):
 
 # Sexo -------------------------------------------------
     elif option == 3:
-        sexo_aluno = input('Por qual sexo deseja buscar: ').capitalize()
+        sexo_aluno = input('Por qual gênero deseja buscar: ').capitalize()
         por_sexo = data[data['sexo'] == sexo_aluno]
 
         if not por_sexo.empty:
