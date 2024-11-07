@@ -12,7 +12,7 @@ def generate_reports(data, option):
     for x in range(len(alunos)):
         media = (alunos_dicionario['nota1'][x] + alunos_dicionario['nota2'][x] + alunos_dicionario['nota3'][x] + alunos_dicionario['nota4'][x]) / 4
         alunos_dicionario['media'][x] = media
-        alunos_dicionario['status'][x] = 'APROVADO' if media >= 7 else 'REPROVADO'
+        alunos_dicionario['status'][x] = 'APROVADO' if media >= 6 else 'REPROVADO'
     
     if not os.path.exists('reports'):
         os.mkdir('reports')
@@ -36,4 +36,3 @@ def generate_reports(data, option):
 
     else:
         print("\033[31mOpção inválida, digite novamente.\033[0m")
-    
